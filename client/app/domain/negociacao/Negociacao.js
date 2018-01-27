@@ -14,10 +14,10 @@ class Negociacao {
     return new Date(this._data.getTime());
   }
   get quantidade() {
-    return this._quantidade;
+    return parseInt(this._quantidade);
   }
   get valor() {
-    return this._valor;
+    return parseFloat(this._valor);
   }
 
   get volume() {

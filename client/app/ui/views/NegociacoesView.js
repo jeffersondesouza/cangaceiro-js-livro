@@ -1,7 +1,7 @@
 
 class NegociacoesView extends View {
 
-  template(model) {
+  template(negociacoes) {
     return `
     <table class="table	table-hover	table-bordered">
       <thead>
@@ -10,15 +10,17 @@ class NegociacoesView extends View {
           <th>QUANTIDADE</th>
           <th>VALOR</th>
           <th>VOLUME</th>
+          <th>MÉDIA</th>
         </tr>
       </thead>
       <tbody>
-      ${model.paraArray().map(negociacao => this.toTrTemplate(negociacao)).join('')}
+      ${negociacoes.paraArray().map(negociacao => this.toTrTemplate(negociacao)).join('')}
       </tbody>
       <tfoot>
         <tr>
           <td	colspan="3"></td>
-          <td>${model.volumeTotal}</td>
+          <td>${negociacoes.volumeTotal}</td>
+          <td>${negociacoes.media}</td>
         </tr> 
       </tfoot>
     </table>
