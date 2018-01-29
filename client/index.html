@@ -55,9 +55,21 @@
   <script src="app/ui/views/MensagemView.js"></script>
 
   <script src="app/app.js"></script>
-  
-  
-  <script></script>
+
+
+  <script>
+
+    const negociacoes = new Proxy(new Negociacoes(), {
+      set(target, prop, value, receiver) {
+        console.log(`${prop}	guarda	${target[prop]},	receberá ${value}`);
+
+        return Reflect.set(targe, value);
+      }
+    });
+
+    negociacoes.esvazia();
+
+  </script>
 
 </body>
 

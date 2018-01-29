@@ -1,0 +1,19 @@
+{
+  "name": "jscangaceiro",
+  "version": "1.0.0",
+  "description": "Estudo do livro Cangaceiro Javascript do Flávio Almeida",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffersondesouza/cangaceiro-js-livro.git"
+  },
+  "author": "Jefferson Desouza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffersondesouza/cangaceiro-js-livro/issues"
+  },
+  "homepage": "https://github.com/jeffersondesouza/cangaceiro-js-livro#readme"
+}
